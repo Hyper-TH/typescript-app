@@ -1,9 +1,14 @@
 import React from 'react';
 import './App.css';
-import { Person } from './components/Person';
+import { Person, Country } from './components/Person';
 
 function App() {
-  return (
+
+	// const getAge = (name: string): number => {
+	// 	return 42
+	// }; 
+
+  	return (
 		<div className="App">
 			<Person
 				name="Hyper"
@@ -11,6 +16,7 @@ function App() {
 				age={21}
 				isMarried={true}
 				friends={["GGanon" , "Glimpse", "Cheedo", "TopKid", "Ely", "NightSky"]}
+				country={Country.Ireland}
 			/>
 		</div>
   	);
